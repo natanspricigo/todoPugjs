@@ -8,3 +8,5 @@ block content
       ul.todo-list
         each val in tarefas
           +listItem(val.texto, val.resolvida)
+        if tarefas.length == 0
+          div.list-head Lista vazia
