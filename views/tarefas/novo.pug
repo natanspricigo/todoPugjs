@@ -1,0 +1,14 @@
+extends ../layout
+
+block styles
+    link(rel='stylesheet', href='/stylesheets/forms.css')
+
+block content
+    div.sign-up-modal
+        form.details(action="/tarefas/salvar", method="post")
+            .input-container
+                input#email.col-sm-12.text-input.with-placeholder(type='text',name="nomeTarefa" placeholder='tarefa...')
+            a(href="/")
+                | voltar
+            button#sign-up-button.save(type="submit")
+                | Salvar

@@ -1,0 +1,6 @@
+
+mixin listItem(text="vazio...", resolvida=false)
+    li
+        input#build(type='checkbox')
+        label.toggle(for='build')
+        | #{text}
